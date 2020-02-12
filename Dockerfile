@@ -5,6 +5,7 @@ FROM centos:7
 RUN yum install git -y
 RUN yum install java 8.0* -y
 RUN yum install maven -y
+RUN curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
 #cloning of project from github
 RUN git clone https://github.com/ALOKSAXEN/springbootwebapp.git
